@@ -1,0 +1,21 @@
+h1 {
+    color: rgb(231, 102, 55);
+    font-size: 50px;
+}
+p { 
+    color: black;
+    font-size: 25px;
+}
+body {
+    background-color: rgb(88, 19, 88);
+}
+footer {
+    color: rgb(231, 102, 55)
+}
+h2 {
+    color:rgb(231, 102, 55)
+}
+ol,ul {
+    color: black;
+    font-size: 20px;
+}
