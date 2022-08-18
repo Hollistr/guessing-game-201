@@ -1,5 +1,20 @@
 'use strict';
 
+// Marc's function work
+
+function askNameWithResponse(q,a) {
+  let response = prompt(q);
+  if (response.toLowerCase() === a.toLowerCase()) {
+    return 'Nailed it!';
+  } else {
+    return 'Oops.';
+  }
+}
+
+let isCorrect = askNameWithResponse('What is my name?', 'Buck');
+alert(isCorrect);
+
+
 let guest = prompt("What is your name?");
 alert("Hello " + guest + ", One Love!!");
 // console.log(guest);
@@ -71,37 +86,38 @@ else if (military === "no"){
     alert("ONE LOVE!!! " + guest);
 }
 
-let states = prompt("How many states have I lived in?");
+// let states = prompt("How many states have I lived in?");
 
-let states = "7"
-if (answer === "7"){
-    // console.log("Correct")
-    alert("Yes!, Florida, California, Arizona, Texas, Mississippi, Oregon, and South Carolina.");
-    }
-if (states > 7){
-    // console.log("Too Low!!!")
-    alert("Too Low!!!")l;
-}
-else (states < 7){
-    // console.log("Too High!!!")
-    alert("Too High!!!");
-    break;
-}
+// let states = "7"
+// if (answer === "7"){
+//     // console.log("Correct")
+//     alert("Yes!, Florida, California, Arizona, Texas, Mississippi, Oregon, and South Carolina.");
+//     }
+// if (states > 7){
+//     // console.log("Too Low!!!")
+//     alert("Too Low!!!")l;
+// }
+// else (states < 7){
+//     // console.log("Too High!!!")
+//     alert("Too High!!!");
+//     break;
+// }
 
-let home = prompt("What state am I currently calling home?");
-if (typeof (home) === 'string'){
-    home = home.toLowerCase();
-}
-let home = [
-    "Florida",
-    "California"
-    "Arizona"
-    "Texas"
-    "Mississippi"
-    "Oregon"
-    "South Carolina"
-];
-if (home === "Oregon"){
-    // console.log("Correct!")
-    alert("I love the farm!!!!");
-}
+// let home = prompt("What state am I currently calling home?");
+// if (typeof (home) === 'string'){
+//     home = home.toLowerCase();
+// }
+// let home = [
+//     "Florida",
+//     "California"
+//     "Arizona"
+//     "Texas"
+//     "Mississippi"
+//     "Oregon"
+//     "South Carolina"
+// ];
+// if (home === "Oregon"){
+//     // console.log("Correct!")
+//     alert("I love the farm!!!!");
+// }
+
