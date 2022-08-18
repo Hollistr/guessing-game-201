@@ -5,10 +5,12 @@ alert("Hello " + guest + ", One Love!!");
 // console.log(guest);
 document.write("One Love!!! " + guest);
 
+let correctAnswers = 0
 
 let born = prompt("Was I born in the U.S.?");
 if (typeof (born) === 'string'){
     born = born.toLowerCase();
+    correctAnswers++;
 }
 if (born === "no"){
     // console.log("Correct!")
@@ -22,6 +24,7 @@ else if (born === "yes"){
 let citizen = prompt("Am I a citizen of the U.S.?");
 if (typeof (citizen) === 'string'){
     citizen = citizen.toLowerCase();
+    correctAnswers++;
 }
 if (citizen === "yes"){
     // console.log("Correct!")
@@ -35,6 +38,7 @@ else if (citizen === "no"){
 let highschool = prompt("Did I go to high school in the U.S.?");
 if (typeof (highschool) === 'string'){
     highschool = highschool.toLowerCase();
+    correctAnswers++;
 }
 if (highschool === "yes"){
     // concole.log("Correct!")
@@ -48,6 +52,7 @@ else if (highschool === "no"){
 let college = prompt("Did I get a college degree in the U.S.?");
 if (typeof (college) === 'string'){
     college = college.toLowerCase();
+    correctAnswers++;
 }
 if (college === "no"){
     // console.log("Correct!")
@@ -61,6 +66,7 @@ else if (college === "yes"){
 let military = prompt("Did I fight for the U.S.?");
 if (typeof (military) === 'string'){
     military = military.toLowerCase();
+    correctAnswers++
 }
 if (military === "yes"){
     // console.log("Correct!")
@@ -70,37 +76,38 @@ else if (military === "no"){
     // console.log("Incorrect!")
     alert("ONE LOVE!!! " + guest);
 }
+for (let i = 1; i < 7; i++){
+    let answer = parseInt(prompt("How many states have I lived in?"));
 
-let states = prompt("How many states have I lived in?");
-
-let states = "7"
-if (answer === "7"){
-    // console.log("Correct")
+if (answer === 7){
+    console.log("Correct")
     alert("Yes!, Florida, California, Arizona, Texas, Mississippi, Oregon, and South Carolina.");
-    }
-if (states > 7){
-    // console.log("Too Low!!!")
-    alert("Too Low!!!")l;
-}
-else (states < 7){
-    // console.log("Too High!!!")
-    alert("Too High!!!");
     break;
+}
+if (answer < 7){
+    console.log("Too Low!!!")
+    alert("Too Low!!!");
+}
+else if (answer > 7){
+    console.log("Too High!!!")
+    alert("Too High!!!");
+}
 }
 
 let home = prompt("What state am I currently calling home?");
 if (typeof (home) === 'string'){
     home = home.toLowerCase();
 }
-let home = [
+let numberOfGuesses = 6;
+     home = [
     "Florida",
-    "California"
-    "Arizona"
-    "Texas"
-    "Mississippi"
-    "Oregon"
-    "South Carolina"
-];
+    "California",
+    "Arizona",
+    "Texas",
+    "Mississippi",
+    "Oregon",
+    "South Carolina",
+]
 if (home === "Oregon"){
     // console.log("Correct!")
     alert("I love the farm!!!!");
