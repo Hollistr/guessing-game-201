@@ -30,8 +30,8 @@ if (citizen === "yes"){
     // console.log("Correct!")
     alert("I'm a duel citizen of the U.S. and Netherlands");
 }
-else if (citizen === "no"){
-    // console.log("Incorrect!")
+else if (citizen === "yes"){
+    // console.log("Correct!")
     alert("I'm a duel citizen of the U.S. and Netherlands");
 }
 
@@ -76,7 +76,8 @@ else if (military === "no"){
     // console.log("Incorrect!")
     alert("ONE LOVE!!! " + guest);
 }
-for (let i = 1; i < 7; i++){
+
+for (let i = 1; i <= 4; i++){
     let answer = parseInt(prompt("How many states have I lived in?"));
 
 if (answer === 7){
@@ -94,21 +95,28 @@ else if (answer > 7){
 }
 }
 
-let home = prompt("What state am I currently calling home?");
+for (let i = 1; i <= 6; i++){
+let home = prompt("I'm I currently calling FL, CA, AZ, TX, MS, OR, or SC home?");
 if (typeof (home) === 'string'){
     home = home.toLowerCase();
+    correctAnswers++
 }
-let numberOfGuesses = 6;
-     home = [
-    "Florida",
-    "California",
-    "Arizona",
-    "Texas",
-    "Mississippi",
-    "Oregon",
-    "South Carolina",
+}
+let home = [
+    "FL",
+    "CA",
+    "AZ",
+    "TX",
+    "MS",
+    "OR",
+    "SC",
 ]
-if (home === "Oregon"){
+if (home === "OR"){
     // console.log("Correct!")
     alert("I love the farm!!!!");
+    return(correctAnswers);
+}   
+else if (home !== "OR"){
+    alert("Not that one!!!");
 }
+alert(correctAnswers);
