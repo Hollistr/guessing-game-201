@@ -114,7 +114,6 @@ let home = [
 if (home === "OR"){
     // console.log("Correct!")
     alert("I love the farm!!!!");
-    return(correctAnswers);
 }   
 else if (home !== "OR"){
     alert("Not that one!!!");
